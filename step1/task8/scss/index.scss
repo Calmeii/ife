@@ -1,0 +1,96 @@
+$vheight : 50px;
+$vpadding : 10px;
+$vbdcolor : #999;
+$vbgcolor : #eee;
+
+@mixin pageStyle {
+  margin: 0;
+  padding: 0;
+}
+@mixin containerStyle {
+  box-sizing: border-box;
+  width: 100%;
+  padding: $vpadding;
+}
+@mixin outerStyle {
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  overflow: auto;
+}
+@mixin innerStyle {
+  background-color: $vbgcolor;
+  border: solid 1px $vbdcolor;
+  height: 50px;
+}
+
+@mixin generateGrid($pc)
+{
+  @if $pc
+  {
+    @for $i from 1 through 12
+    {
+      .col-md-#{$i} {
+        width: $i/12.0*100%;
+      }
+    }
+  }
+  @else
+  {
+    @for $i from 1 through 12
+    {
+      .col-sm-#{$i} {
+        width: $i/12.0*100%;
+      }
+    }
+  }
+}
+
+html, body {
+  @include pageStyle;
+}
+.container {
+  @include containerStyle;
+}
+.outer {
+  @include outerStyle;
+}
+.inner {
+  @include innerStyle;
+}
+
+@media (min-width: 769px) {
+  @include generateGrid(true);
+}
+@media (max-width: 768px) {
+  @include generateGrid(false);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
