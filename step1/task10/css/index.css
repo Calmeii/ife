@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.boxgroup {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 150px;
+  border: 1px solid #f00;
+}
+
+.box1 {
+  height: 120px;
+}
+.box2 {
+  height: 100px;
+}
+.box3 {
+  height: 40px;
+}
+.box4 {
+  height: 200px;
+  border: 1px solid #0f0;
+}
+@media (max-width: 640px) {
+  .box4 {
+    order: -1;
+  }
+}
