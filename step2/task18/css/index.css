@@ -1,0 +1,11 @@
+#queue div{
+  float: left;
+  display: table;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: red;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
