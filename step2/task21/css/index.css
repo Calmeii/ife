@@ -1,0 +1,26 @@
+body {
+  padding: 5px;
+  font-size: 25px;
+}
+
+div[id$="container"] {
+  margin: 20px 0;
+  margin-bottom: 50px;
+}
+
+div[id$="container"] span {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  background-color: deepskyblue;
+
+  color: white;
+}
+
+span[class='focus'] {
+  background-color: darkgreen !important;
+  cursor: pointer;
+}
+button[id='confirm'] {
+  cursor: pointer;
+}

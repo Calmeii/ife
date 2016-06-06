@@ -76,7 +76,8 @@ window.onload = function()
       for (var i in  this.arr) {
         text += "<div id = "+i+">"+this.arr[i]+"</div>";
       }
-      pos.innerHTML = text;
+      pos.innerHTML = text;11
+      
     },
     deleteId : function(id) {
       this.arr.splice(id, 1);
