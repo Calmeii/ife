@@ -1,0 +1,99 @@
+#menu {
+  width: 400px;
+  margin: 80px auto;
+  font-family: Arial ,"Times New Roman", Georgia, Serif;
+}
+
+#tree {
+  margin-top: 50px;
+}
+
+.node-header {
+  height: 20px;
+}
+
+.node-visible{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin: 5px 18px;
+}
+
+.node-hidden {
+  display: none;
+}
+
+
+.arrow {
+  height: 0;
+  width: 0;
+  cursor: pointer;
+  margin-right: 5px;
+  display: inline-block;
+}
+.arrow-right {
+  border-left: 10px solid #6898c2;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.arrow-down {
+  border-top: 10px solid #6898c2;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.arrow-empty {
+  visibility: hidden;
+  border-top: 10px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.icon-add, .icon-del{
+  font-weight: 900;
+  vertical-align: top;
+  display: none;
+  color: #6898c2;
+}
+.icon-add {
+  font-size: 1.1em;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.icon-add:hover, .icon-del:hover {
+  cursor: pointer;
+  color: red;
+}
+.node-header:hover>.icon-add, .node-header:hover>.icon-del  {
+  display: inline;
+}
+
+.node-title:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.highlight {
+  color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
