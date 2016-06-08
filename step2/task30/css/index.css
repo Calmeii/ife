@@ -1,0 +1,77 @@
+#container {
+  margin: 100px auto;
+  width: 600px;
+}
+
+.input-group {
+  margin: 15px;
+}
+label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+/* input */
+.input {
+  height: 32px;
+  width: 350px;
+  padding: 5px;
+  border-radius: 3px;
+  border: solid 1px;
+}
+.input-normal {
+  border-color: #ccc;
+}
+.input-accept {
+  border-color: limegreen;
+}
+.input-wrong {
+  border-color: red;
+}
+
+/* hint */
+.hint {
+  margin-left: 110px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+.hint-normal {
+  color: #aaa;
+}
+.hint-accept {
+  color: limegreen;
+}
+.hint-wrong {
+  color: red;
+}
+
+
+#button {
+  margin-left: 405px;
+  height: 30px;
+  width: 65px;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
